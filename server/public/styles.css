@@ -4,7 +4,31 @@ body {
   left: 0;
   margin: 0;
   padding: 20px;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  width: calc(100vw - 40px);
+}
+.header a {
+  margin: 5px;
+}
+
+.movie-tile {
+  margin: 10px;
+  text-align: center;
+}
+.movie-tile h3 {
+  margin-top: 3px;
+}
+.movie-tile img {
+  height: 200px;
+}
+.movie-tile__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=styles.css.map*/

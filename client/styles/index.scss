@@ -1,10 +1,22 @@
+$body_padding: 20px;
+
 body {
   position: absolute;
   top: 0;
   left: 0;
   margin: 0;
-  padding: 20px;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: $body_padding;
+  font-family: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
+.header {
+text-align:center;
+width: calc(100vw - #{$body_padding * 2});
+
+  a {
+    margin: 5px;
+  }
+}
+
+@import 'movie_list'

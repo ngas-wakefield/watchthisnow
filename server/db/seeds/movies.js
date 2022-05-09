@@ -1,3 +1,4 @@
+
 exports.seed = function(knex) {
   // Deletes ALL existing entries
   return knex('movies').del()
@@ -16,7 +17,7 @@ exports.seed = function(knex) {
           imdb_id: 'tt0054215',
           watched: false
         },
-
+       
       ]);
     });
 };

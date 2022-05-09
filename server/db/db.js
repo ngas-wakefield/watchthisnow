@@ -5,7 +5,20 @@ function getAllMovies (db = conn) {
 
 }
 
-module.exports = {
-    getAllMovies
+function addMovie(movie, db = conn) {
+    return db('movies')
+    .insert(movie, 'id')
+}
 
+function delMovie (id, db = conn) {
+    return db('movies')
+    .where('id', id)
+    .del()
+
+
+}
+module.exports = {
+    getAllMovies,
+    addMovie,
+    delMovie
 }
